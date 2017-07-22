@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container">
+  <div class="menu">
+    <header>
+      {{#link-to 'index'}}
+      <h1>Super Rentals</h1>
+      {{/link-to}}
+      <hr>
+    </header>
+    <div class="links">
+      {{#link-to 'about'}}
+      About
+      {{/link-to}}
+      {{#link-to 'contact'}}
+      Contact
+      {{/link-to}}
+    </div>
+  </div>
+  <section class="body">
+    {{outlet}}
+  </section>
+</div>
